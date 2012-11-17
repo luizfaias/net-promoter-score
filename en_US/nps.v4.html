@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Net Promoter Score</title>
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="modal fade" id="NPSsurvey">
+			<div class="modal-header">
+				<h3>Customer Satisfaction Survey</h3>
+			</div>
+			<div class="modal-body">
+				<p>How likely is it that you would recommend us to a friend or colleague?</p>
+				<div class="row-fluid">
+					<h4>
+						<span class="span1"><input type="radio" name="score" value="0"> 0</span>
+						<span class="span1"><input type="radio" name="score" value="1"> 1</span>
+						<span class="span1"><input type="radio" name="score" value="2"> 2</span>
+						<span class="span1"><input type="radio" name="score" value="3"> 3</span>
+						<span class="span1"><input type="radio" name="score" value="4"> 4</span>
+						<span class="span1"><input type="radio" name="score" value="5"> 5</span>
+						<span class="span1"><input type="radio" name="score" value="6"> 6</span>
+						<span class="span1"><input type="radio" name="score" value="7"> 7</span>
+						<span class="span1"><input type="radio" name="score" value="8"> 8</span>
+						<span class="span1"><input type="radio" name="score" value="9"> 9</span>
+						<span class="span2"><input type="radio" name="score" value="10"> 10</span>
+					</h4>
+				</div>
+				<br>
+				<div class="row-fluid">
+					<div class="progress progress-striped" style="width:91.48936170212765%;">
+						<div class="bar bar-danger" style="width: 26%;"></div>
+						<div class="bar bar-warning" style="width: 36%;"></div>
+						<div class="bar bar-success" style="width: 19%;"></div>
+						<div class="bar" style="width: 19%;"></div>
+					</div>
+				</div>
+				<div classs="row-fluid">
+					<div class="span1"><span class="label label-important">Not at all likely</span></div>
+					<div class="span1 offset3"><span class="label label-info">Very likely</span></div>
+				</div>
+				<br><br>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn">Submit Answer</a>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+		<script>
+			$('#NPSsurvey').modal({
+			  backdrop: 'static',
+			  keyboard: false
+			});
+		</script>
+	</body>
+</html>
